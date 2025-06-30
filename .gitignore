@@ -1,0 +1,31 @@
+# Ignore all .tfstate files and backup files (recursively)
+**/*.tfstate
+**/*.tfstate.*
+
+# Crash logs
+**/crash.log
+
+# Ignore Terraform plan output
+**/*.tfplan
+
+# Terraform .terraform folders (plugin and state cache)
+**/.terraform/
+
+# Ignore .tfvars files (sensitive variables)
+**/*.tfvars
+
+# Ignore override files (used for local testing)
+**/*.tfoverride
+**/*_override.tf
+
+# IDE / Editor junk
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Log or debug files
+*.log
+
+/modules
